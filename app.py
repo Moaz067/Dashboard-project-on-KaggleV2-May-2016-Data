@@ -34,7 +34,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
         print(os.path.join(dirname, filename))
 
 # read the file
-df = pd.read_csv(r"C:\KaggleV2-May-2016.csv")
+df = pd.read_csv("\KaggleV2-May-2016.csv")
 
 
 df['ScheduledDay'] = pd.to_datetime(df['ScheduledDay'], dayfirst=True)
@@ -455,4 +455,5 @@ def update_content(active_tab, age_range, neighborhood):
         ])
     ])
 if __name__ == '__main__':
+
     app.run(debug=True)
